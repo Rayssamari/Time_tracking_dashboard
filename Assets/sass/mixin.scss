@@ -1,0 +1,72 @@
+@mixin subtitle {
+    color:#948AFF;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+@mixin img-card {
+    width: 60px;
+    position: absolute;
+    margin-right: 15px;
+    right: 0;
+    top: 0;
+}
+@mixin bullets {
+    font-size: 1.3rem;
+}
+@mixin  card-info-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@mixin card-info {
+    background-color: $card-bg;
+    color: $white;
+    height: 130px;
+    z-index: 99;
+    border-radius: 15px;
+    padding:25px;
+}
+
+@mixin card-hours {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+@mixin card-one($grid-area, $card-color) {
+    grid-area: $grid-area;
+    background-color: $card-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 220px;
+    border-radius: 15px;
+
+    img{
+        @include img-card;
+    }
+
+    .card-info{
+        @include card-info;
+
+        .card-info-title{
+            @include card-info-title;
+
+            .bullets{
+                @include bullets;
+            }
+        }
+
+        .card-hours{
+            @include card-hours;
+        }
+        .subtitle{
+            @include subtitle;
+        }
+    }
+}

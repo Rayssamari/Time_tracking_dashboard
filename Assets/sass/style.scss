@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+@import './variables.scss';
+@import './mixin.scss';
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: $background-color;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    column-gap: 20px;
+    row-gap:   20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'card-person card-work card-play card-study'
+    'card-person card-exercise card-social card-selfCare';
+
+    .card-person{
+        grid-area: card-person;
+        background-color: $card-bg;
+        border-radius: 15px;
+
+        .card-person-info{
+            background-color: $card-person-bgColor;
+            padding: 20px;
+            border-radius: 15px;
+
+            img {
+                width: 80px;
+                border: 3px solid $white;
+                border-radius: 50%;
+                margin-bottom: 30px
+            }
+            .subtitle{
+                @include subtitle;
+            }
+            .card-person-info-name{
+                color: $white;
+                font-size: 2.5rem;
+                font-weight: 300;
+
+            }
+        }
+        .nav-links{
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+
+            .card-person-item{
+                color: $color-link;
+                display: block;
+                padding: 10px;
+
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+   
+    .card-work{
+        @include card-one('card-work', $card-work);
+    }
+
+    .card-play{
+        @include card-one('card-play', $card-play);
+    }
+    .card-study{
+        @include card-one('card-study', $card-study);
+    }   
+    .card-exercise{
+        @include card-one('card-exercise', $card-exercise);
+    }
+    .card-social{
+        @include card-one('card-social', $card-social);
+    }
+    .card-selfCare{
+        @include card-one('card-selfCare', $card-selfCare);
+    }
+}
+
+
+
+@import './responsive.scss';

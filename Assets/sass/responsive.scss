@@ -1,0 +1,23 @@
+@media (max-width: 864px){
+    .container {
+        width: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'card-person'
+        'card-work' 
+        'card-play' 
+        'card-study'
+        'card-exercise'
+        'card-social'
+        'card-selfCare';
+        .card-person{
+            .nav-links{
+                flex-direction: row;
+                justify-content: space-around;
+                .card-person-item{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
