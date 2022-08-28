@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Rayssamari/time_tracking_dashboard)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://rayssamari.github.io/time_tracking_dashboard/#)
 
 ## My process
 
@@ -51,7 +51,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- LikedIN - https://www.linkedin.com/in/rayssa-mariana-s/
+- Frontend Mentor - [@Rayssamari](https://www.frontendmentor.io/profile/Rayssamari)
 
